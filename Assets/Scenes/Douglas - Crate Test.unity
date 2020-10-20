@@ -541,7 +541,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &489311650
 Transform:
   m_ObjectHideFlags: 0
@@ -589,7 +589,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 403958d77b1268b4eab5666154fbaa53, type: 2}
+  - {fileID: 2100000, guid: 06f59ef06e6e74f4ab6167d977a2cf4b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -767,7 +767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f4b2afdf656b9e4ebce9e83e681df81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rectBlockPrefab: {fileID: 1255823622}
+  blockPrefab: {fileID: 1255823622}
 --- !u!1 &714305267
 GameObject:
   m_ObjectHideFlags: 0
