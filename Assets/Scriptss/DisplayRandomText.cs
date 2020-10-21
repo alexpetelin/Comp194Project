@@ -5,20 +5,25 @@ using TMPro;
 
 public class DisplayRandomText : MonoBehaviour
 {
-    public TextMeshPro _Text;
-    private string prompt = "prompt 1";
+    public TMP_Text randomPrompt;
+    // private string prompt = "prompt 1";
+
+    public string [ ] promptList = new string [ ]{"horse", "house", "robot", "tree", "cat"};
+    
 
     void Start()
     {
-        _Text = gameObject.AddComponent<TextMeshPro>();
-        _Text.text = prompt;
+        int a = Random.Range(0, promptList.Length - 1);
+        string prompt = promptList[a];
+        Debug.Log(prompt);
+        randomPrompt.text = prompt;
         
+        
+        
+        
+        // _Text = gameObject.AddComponent<TextMeshPro>();
+        // _Text.text = prompt;
         //Text = FindObjectOfType<TextMeshPro>();
     }
 
-
-    void Update()
-    {
-        //Text.text = "Prompt 1";
-    }
 }
