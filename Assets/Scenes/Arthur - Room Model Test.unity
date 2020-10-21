@@ -661,7 +661,7 @@ GameObject:
   m_Component:
   - component: {fileID: 336036905}
   m_Layer: 0
-  m_Name: Sign
+  m_Name: Sign New
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1420,6 +1420,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomPrompt: {fileID: 1980557515}
+  promptList:
+  - horse
+  - house
+  - tree
+  - robot
 --- !u!1 &621394692
 GameObject:
   m_ObjectHideFlags: 0
@@ -2178,7 +2183,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_Name
-      value: OVRPlayerController
+      value: OVRPlayerController ()
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2186,7 +2191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.05
+      value: 3.05
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.z
