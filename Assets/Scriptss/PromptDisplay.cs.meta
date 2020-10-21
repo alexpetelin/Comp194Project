@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scriptss/PromptDisplay.cs.meta
+guid: 8ebdd8770e3b8104d8f9610a0af897b7
+=======
 guid: e8d613d513861406e9fa729469b29f02
+>>>>>>> e7e3bd080467dc6633b883d81906897720ae9702:Assets/Scriptss/DisplayRandomText.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

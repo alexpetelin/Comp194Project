@@ -6,6 +6,14 @@ TagManager:
   tags:
   - RectBlock
   - Hands
+  - bucketgreen
+  - bucketyellow
+  - bucketgray
+  - bucketwhite
+  - bucketred
+  - bucketbrown
+  - bucketblack
+  - bucketblue
   layers:
   - Default
   - TransparentFX
