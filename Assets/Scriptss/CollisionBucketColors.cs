@@ -14,45 +14,45 @@ public class CollisionBucketColors : MonoBehaviour
      public Color pbblack;
      public Color pbblue; 
  
-     void OnCollisionEnter(Collision other) {
+     void OnTriggerEnter(Collider other) {
          if (transform.tag == "bucketyellow") 
          {            
-             other.transform.GetComponent<Renderer> ().material.color = pbyellow;
+             other.gameObject.GetComponent<Renderer> ().material.color = pbyellow;
          }
  
          if (transform.tag == "bucketgray") 
          {            
-             other.transform.GetComponent<Renderer> ().material.color = pbgray;
+             other.gameObject.GetComponent<Renderer> ().material.color = pbgray;
          }
 
          if (transform.tag == "bucketwhite") 
          {            
-             other.transform.GetComponent<Renderer> ().material.color = pbwhite;
+             other.gameObject.GetComponent<Renderer> ().material.color = pbwhite;
          }
 
          if (transform.tag == "bucketred") 
          {            
-             other.transform.GetComponent<Renderer> ().material.color = pbred;
+             other.gameObject.GetComponent<Renderer> ().material.color = pbred;
          }
 
          if (transform.tag == "bucketbrown") 
          {            
-             other.transform.GetComponent<Renderer> ().material.color = pbbrown;
+             other.gameObject.GetComponent<Renderer> ().material.color = pbbrown;
          }
 
          if (transform.tag == "bucketgreen") 
          {            
-             other.transform.GetComponent<Renderer> ().material.color = pbgreen;
+             other.gameObject.GetComponent<Renderer> ().material.color = pbgreen;
          }
 
          if (transform.tag == "bucketblack") 
          {            
-             other.transform.GetComponent<Renderer> ().material.color = pbblack;
+             other.gameObject.GetComponent<Renderer> ().material.color = pbblack;
          }
 
          if (transform.tag == "bucketblue") 
          {            
-             other.transform.GetComponent<Renderer> ().material.color = pbblue;
+             other.gameObject.GetComponent<Renderer> ().material.color = pbblue;
          }
 
 

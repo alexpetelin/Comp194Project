@@ -6,10 +6,10 @@ public class Trashcan : MonoBehaviour
 {
     public GameObject trashcanobject;
 
-    void OnCollisionEnter(Collision other) {
-        
+    void OnTriggerEnter(Collider other) {
+        if (other.transform.tag == "block"){
             Destroy(other.gameObject);
-        
+        } 
     }
   
 }
