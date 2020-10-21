@@ -6,28 +6,21 @@ public class BlockSpawner : MonoBehaviour
 {
     public GameObject blockPrefab;
     bool isColliding = false;
-    bool createBlock = false; 
-    Vector3 handPos;
+    bool createBlock = false;
+    public GameObject hands; 
+    //Vector3 handPos;
     void OnTriggerEnter(Collider other){
         if (other.transform.tag == "Hands"){
-            isColliding = true; 
-            Debug.Log("1");
+            GameObject hands = other.gameObject; 
+            isColliding = true;
             createBlock = false;
         }
     }
     
-    // void OnTriggerExit(Collider other){
-    //     if (other.transform.tag == "Hands"){
-    //         isColliding = false;
-    //         createBlock = false; 
-    //         Debug.Log("3");
-    //     }
-    // }
-
-    void OnTriggerStay(Collider other){
+    void OnTriggerExit(Collider other){
         if (other.transform.tag == "Hands"){
-            handPos = other.transform.position;
-            Debug.Log("2");
+            isColliding = false;
+            createBlock = false; 
         }
     }
     
@@ -38,12 +31,13 @@ public class BlockSpawner : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if(isColliding == true && createBlock == false /*&& Input.GetAxis("Oculus_CrossPlatform_PrimaryHandTrigger") > 0.2*/){
-            createBlock = true; 
-            Instantiate(blockPrefab, handPos, Quaternion.identity);
-            Debug.Log("4");
+        if(isColliding == true && createBlock == false){
+            if(Input.GetAxis("Oculus_CrossPlatform_SecondaryHandTrigger") > 0.2 || Input.GetAxis("Oculus_CrossPlatform_PrimaryHandTrigger") > 0.2){
+                createBlock = true; 
+                Instantiate(blockPrefab, hands.transform.position, Quaternion.identity);
+            }
         }
     }
     
