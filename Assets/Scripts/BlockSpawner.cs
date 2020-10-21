@@ -8,9 +8,10 @@ public class BlockSpawner : MonoBehaviour
     bool isColliding = false;
     bool createBlock = false;
     public GameObject hands; 
+    
     void OnTriggerEnter(Collider other){
         if (other.transform.tag == "Hands"){
-            GameObject hands = other.gameObject; 
+            hands = other.gameObject; 
             isColliding = true;
             createBlock = false;
         }
