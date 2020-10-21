@@ -8,7 +8,6 @@ public class BlockSpawner : MonoBehaviour
     bool isColliding = false;
     bool createBlock = false;
     public GameObject hands; 
-    //Vector3 handPos;
     void OnTriggerEnter(Collider other){
         if (other.transform.tag == "Hands"){
             GameObject hands = other.gameObject; 
